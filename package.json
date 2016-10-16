@@ -8,13 +8,12 @@
     "dotenv": "^2.0.0",
     "nightmare": "^2.7.0",
     "node-slack": "0.0.7",
-    "textmagic-rest-client": "0.0.5",
     "twilio": "^2.11.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node -r dotenv/config index.js"
   },
   "author": "",
   "license": "ISC"

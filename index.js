@@ -13,7 +13,6 @@ var jb = new CronJob('0 */1 * * * *', function() {
 jb.start();
 
 
-
 function runScript()
 {
   let nightmare = Nightmare({ show: false });
@@ -45,13 +44,13 @@ function runScript()
     }
     else {
       client.sendMessage({
-        to:'+15135930807', // Any number Twilio can deliver to
-        from: '+15132808426', // A number you bought from Twilio and can use for outbound communication
-        body: 'There are leggings!' // body of the SMS message
+        to:'+15135930807', 
+        from: '+15132808426', 
+        body: 'There are leggings!',
       });
     }
   })
   .catch(error => {
-    console.error('Search failed:', error);
+    console.error('Failed:',error);
   });
 };
